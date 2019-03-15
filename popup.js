@@ -25,7 +25,6 @@ document.addEventListener('DOMContentLoaded', function() {
             for( var i = 0; i < x.length; i++) {
                 x[i].click();
             }
-            alert("Done") 
         });
     }, false);
 }, false);
