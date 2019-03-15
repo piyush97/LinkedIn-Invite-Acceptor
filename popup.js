@@ -19,4 +19,13 @@ chrome.tabs.query({ active: true, currentWindow: true }, function(tabs){
 
 document.addEventListener('DOMContentLoaded', function() {
     var x = document.getElementsByClassName('button-secondary-medium')
-})
+    checkPageButton.addEventListener('click', function() {
+        chrome.tabs.getSelected(null, function(tab) {
+            var x = document.getElementsByClassName('button-secondary-medium')
+            for( var i = 0; i < x.length; i++) {
+                x[i].click();
+            }
+            alert("Done") 
+        });
+    }, false);
+}, false);
