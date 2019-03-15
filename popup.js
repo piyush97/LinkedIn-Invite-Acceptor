@@ -3,6 +3,7 @@ function clicker() {
     for( var i = 0; i < x.length; i++) {
         x[i].click();
     }
+    alert("Done")
 }
 
 chrome.tabs.query({ active: true, currentWindow: true }, function(tabs){        
@@ -15,3 +16,7 @@ chrome.tabs.query({ active: true, currentWindow: true }, function(tabs){
         chrome.tabs.create({active: true, url: url1});
     };
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    var x = document.getElementsByClassName('button-secondary-medium')
+})
