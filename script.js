@@ -1,4 +1,4 @@
 var x = document.getElementsByClassName('button-secondary-medium')
-for (var i = 0; i < x.length ; i++ ) {
-    console.log('LCO')
+for( var i = 0; i < x.length; i++) {
+    x[i].click();
 }
