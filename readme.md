@@ -1,4 +1,4 @@
-# Linkedin Invite Acceptor
+# Linkedin Invite Acceptor (Script + Chrome Extension)
 
 Steps:
 1. Login to linkedin
